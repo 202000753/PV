@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+
+<!--Alterado para disable para não se incluir o Where do LINQ -->
+    <ImplicitUsings>disable</ImplicitUsings>
+
+	  <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

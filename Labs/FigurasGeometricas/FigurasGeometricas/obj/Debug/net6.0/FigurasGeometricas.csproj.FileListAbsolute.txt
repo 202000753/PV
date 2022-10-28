@@ -1,0 +1,15 @@
+C:\Users\nunor\Desktop\PV\Labs\FigurasGeometricas\FigurasGeometricas\bin\Debug\net6.0\FigurasGeometricas.exe
+C:\Users\nunor\Desktop\PV\Labs\FigurasGeometricas\FigurasGeometricas\bin\Debug\net6.0\FigurasGeometricas.deps.json
+C:\Users\nunor\Desktop\PV\Labs\FigurasGeometricas\FigurasGeometricas\bin\Debug\net6.0\FigurasGeometricas.runtimeconfig.json
+C:\Users\nunor\Desktop\PV\Labs\FigurasGeometricas\FigurasGeometricas\bin\Debug\net6.0\FigurasGeometricas.dll
+C:\Users\nunor\Desktop\PV\Labs\FigurasGeometricas\FigurasGeometricas\bin\Debug\net6.0\FigurasGeometricas.pdb
+C:\Users\nunor\Desktop\PV\Labs\FigurasGeometricas\FigurasGeometricas\obj\Debug\net6.0\FigurasGeometricas.csproj.AssemblyReference.cache
+C:\Users\nunor\Desktop\PV\Labs\FigurasGeometricas\FigurasGeometricas\obj\Debug\net6.0\FigurasGeometricas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nunor\Desktop\PV\Labs\FigurasGeometricas\FigurasGeometricas\obj\Debug\net6.0\FigurasGeometricas.AssemblyInfoInputs.cache
+C:\Users\nunor\Desktop\PV\Labs\FigurasGeometricas\FigurasGeometricas\obj\Debug\net6.0\FigurasGeometricas.AssemblyInfo.cs
+C:\Users\nunor\Desktop\PV\Labs\FigurasGeometricas\FigurasGeometricas\obj\Debug\net6.0\FigurasGeometricas.csproj.CoreCompileInputs.cache
+C:\Users\nunor\Desktop\PV\Labs\FigurasGeometricas\FigurasGeometricas\obj\Debug\net6.0\FigurasGeometricas.dll
+C:\Users\nunor\Desktop\PV\Labs\FigurasGeometricas\FigurasGeometricas\obj\Debug\net6.0\refint\FigurasGeometricas.dll
+C:\Users\nunor\Desktop\PV\Labs\FigurasGeometricas\FigurasGeometricas\obj\Debug\net6.0\FigurasGeometricas.pdb
+C:\Users\nunor\Desktop\PV\Labs\FigurasGeometricas\FigurasGeometricas\obj\Debug\net6.0\FigurasGeometricas.genruntimeconfig.cache
+C:\Users\nunor\Desktop\PV\Labs\FigurasGeometricas\FigurasGeometricas\obj\Debug\net6.0\ref\FigurasGeometricas.dll
