@@ -1,0 +1,17 @@
+C:\Users\nunor\Downloads\BikeStore\bin\Debug\net6.0\BikeStore.exe
+C:\Users\nunor\Downloads\BikeStore\bin\Debug\net6.0\BikeStore.deps.json
+C:\Users\nunor\Downloads\BikeStore\bin\Debug\net6.0\BikeStore.runtimeconfig.json
+C:\Users\nunor\Downloads\BikeStore\bin\Debug\net6.0\BikeStore.dll
+C:\Users\nunor\Downloads\BikeStore\bin\Debug\net6.0\BikeStore.pdb
+C:\Users\nunor\Downloads\BikeStore\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\nunor\Downloads\BikeStore\obj\Debug\net6.0\BikeStore.csproj.AssemblyReference.cache
+C:\Users\nunor\Downloads\BikeStore\obj\Debug\net6.0\BikeStore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nunor\Downloads\BikeStore\obj\Debug\net6.0\BikeStore.AssemblyInfoInputs.cache
+C:\Users\nunor\Downloads\BikeStore\obj\Debug\net6.0\BikeStore.AssemblyInfo.cs
+C:\Users\nunor\Downloads\BikeStore\obj\Debug\net6.0\BikeStore.csproj.CoreCompileInputs.cache
+C:\Users\nunor\Downloads\BikeStore\obj\Debug\net6.0\BikeStore.csproj.CopyComplete
+C:\Users\nunor\Downloads\BikeStore\obj\Debug\net6.0\BikeStore.dll
+C:\Users\nunor\Downloads\BikeStore\obj\Debug\net6.0\refint\BikeStore.dll
+C:\Users\nunor\Downloads\BikeStore\obj\Debug\net6.0\BikeStore.pdb
+C:\Users\nunor\Downloads\BikeStore\obj\Debug\net6.0\BikeStore.genruntimeconfig.cache
+C:\Users\nunor\Downloads\BikeStore\obj\Debug\net6.0\ref\BikeStore.dll

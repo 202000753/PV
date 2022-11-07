@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Materiais\Imagens\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\documents\Quarto de Casal com sofá cama.pdf" />
+    <None Include="wwwroot\documents\Quarto de Casal.pdf" />
+    <None Include="wwwroot\documents\Quarto Individual.pdf" />
+    <None Include="wwwroot\documents\Studio Apartment.pdf" />
+    <None Include="wwwroot\images\under_construction.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.10" />
+  </ItemGroup>
+
+</Project>

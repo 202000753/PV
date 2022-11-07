@@ -8,6 +8,6 @@ namespace Lab1_CG
 {
     internal enum Suit
     {
-        None, Espadas, Corações, Ouros, Paus
+        None, Espadas, Copas, Ouros, Paus
     }
 }

@@ -1,0 +1,36 @@
+﻿@model Room
+
+@{
+    ViewData["Title"] = "Quarto recomendado";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <h4>Room</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.type)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.type)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.price)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.price)
+        </dd>
+    </dl>
+</div>
+<p>@ViewData["IndexRoom"]</p>
+<div>
+    <h4><a asp-controller="Home" asp-action="MakeReservation" class="label label-success">Reservar</a></h4>
+</div>

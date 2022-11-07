@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Room>
+@{
+    ViewData["Title"] = "Quartos";
+
+    int index = 1;
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@foreach (var item in Model)
+{
+    <div>
+        <h4>Room @index</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(item => item.name)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => item.name)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(item => item.type)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => item.type)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(item => item.price)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => item.price)
+            </dd>
+        </dl>
+    </div>
+
+    index += 1;
+}

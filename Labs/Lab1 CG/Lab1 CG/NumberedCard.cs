@@ -59,27 +59,9 @@ namespace Lab1_CG
             }
         }
 
-        /*public override string Name
-        {
-            get
-            {
-                switch (faceName)
-                {
-                    case FaceName.Jack:
-                        return "Ás";
-                    case FaceName.Queen:
-                        return "Dois";
-                    case FaceName.King:
-                        return "Dois";
-                    default:
-                        return "";
-                }
-            }
-        }*/
-
         public override string ToString()
         {
-            return Name + " de " + base.Suit;
+            return Name + " de " + base.suit.ToNameString();
         }
     }
 }

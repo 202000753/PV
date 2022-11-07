@@ -1,0 +1,15 @@
+C:\Users\nunor\Desktop\PV\Apresentações\ButtonClick\ButtonClick\bin\Debug\net6.0\ButtonClick.exe
+C:\Users\nunor\Desktop\PV\Apresentações\ButtonClick\ButtonClick\bin\Debug\net6.0\ButtonClick.deps.json
+C:\Users\nunor\Desktop\PV\Apresentações\ButtonClick\ButtonClick\bin\Debug\net6.0\ButtonClick.runtimeconfig.json
+C:\Users\nunor\Desktop\PV\Apresentações\ButtonClick\ButtonClick\bin\Debug\net6.0\ButtonClick.dll
+C:\Users\nunor\Desktop\PV\Apresentações\ButtonClick\ButtonClick\bin\Debug\net6.0\ButtonClick.pdb
+C:\Users\nunor\Desktop\PV\Apresentações\ButtonClick\ButtonClick\obj\Debug\net6.0\ButtonClick.csproj.AssemblyReference.cache
+C:\Users\nunor\Desktop\PV\Apresentações\ButtonClick\ButtonClick\obj\Debug\net6.0\ButtonClick.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nunor\Desktop\PV\Apresentações\ButtonClick\ButtonClick\obj\Debug\net6.0\ButtonClick.AssemblyInfoInputs.cache
+C:\Users\nunor\Desktop\PV\Apresentações\ButtonClick\ButtonClick\obj\Debug\net6.0\ButtonClick.AssemblyInfo.cs
+C:\Users\nunor\Desktop\PV\Apresentações\ButtonClick\ButtonClick\obj\Debug\net6.0\ButtonClick.csproj.CoreCompileInputs.cache
+C:\Users\nunor\Desktop\PV\Apresentações\ButtonClick\ButtonClick\obj\Debug\net6.0\ButtonClick.dll
+C:\Users\nunor\Desktop\PV\Apresentações\ButtonClick\ButtonClick\obj\Debug\net6.0\refint\ButtonClick.dll
+C:\Users\nunor\Desktop\PV\Apresentações\ButtonClick\ButtonClick\obj\Debug\net6.0\ButtonClick.pdb
+C:\Users\nunor\Desktop\PV\Apresentações\ButtonClick\ButtonClick\obj\Debug\net6.0\ButtonClick.genruntimeconfig.cache
+C:\Users\nunor\Desktop\PV\Apresentações\ButtonClick\ButtonClick\obj\Debug\net6.0\ref\ButtonClick.dll

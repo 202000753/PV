@@ -3,19 +3,57 @@
 
 using Lab1_CG;
 
-IList<Card> cards = new List<Card>()
-{
-    new FaceCard{ faceName = FaceName.Valete, suit = Suit.Paus },
-    new NumberedCard{ number = 3, suit = Suit.Ouros },
-    new NumberedCard{ number = 1, suit = Suit.Paus },
-    new FaceCard { faceName = FaceName.Rei, suit = Suit.Corações},
-    new FaceCard { faceName = FaceName.Rainha, suit = Suit.Espadas},
-    null
-};
+List<Card> cards = new List<Card>();
+cards.Add(new FaceCard(FaceName.Valete, Suit.Paus));
+cards.Add(new NumberedCard(3, Suit.Ouros));
+cards.Add(new NumberedCard(1, Suit.Paus));
+cards.Add(new FaceCard(FaceName.Rei, Suit.Copas));
+cards.Add(new FaceCard(FaceName.Rainha, Suit.Espadas));
 
 Console.WriteLine("=======================");
-Console.Write("Lista de Cartas soltas:\n");
+Console.WriteLine("Lista de Cartas soltas:");
 foreach (Card card in cards)
 {
     Console.WriteLine(card);
 }
+
+Console.WriteLine("\n\n==================");
+Console.WriteLine("Baralho de cartas:");
+Deck deck1 = new Deck(cards);
+Console.WriteLine(deck1);
+
+Console.WriteLine("\n==================");
+Console.WriteLine("Colocar cartas no baralho:");
+List<Card> cardsDeck1 = deck1.Cards;
+deck1.clear();
+foreach (Card card in cardsDeck1)
+{
+    deck1.putCard(card);
+    Console.WriteLine(deck1.topCard());
+}
+
+Console.WriteLine("\n==================");
+Console.WriteLine("Retirar cartas no baralho:");
+foreach (Card card in cardsDeck1)
+{
+    Console.WriteLine(deck1.drawCard());
+}
+
+Console.WriteLine("\n==================");
+Console.WriteLine("Baralho no final:");
+Console.WriteLine(deck1);
+
+Console.WriteLine("\n===========================");
+Console.WriteLine("Baralho de cartas da Sueca:\n");
+SuecaDeck deck2 = new SuecaDeck();
+Console.WriteLine(deck2);
+
+Console.WriteLine("\n===========================");
+Console.WriteLine("Cartas baralhadas:\n");
+deck2.shuffle();
+Console.WriteLine(deck2);
+
+Console.WriteLine("\n===========================");
+Console.WriteLine("Cartas da Sueca ordenadas por valor");
+deck2.sortByValue();
+Console.WriteLine(deck2);

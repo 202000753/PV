@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "GPwHHgTlwyW5Sund/mlx9q9fBho6Ebjly5aSJy9UXwc2R0xyKvqJGk4GL6ToQbcehE3hFw5+IgkGWQeES/Yymw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nunor\\Desktop\\PV\\Labs\\BikeStore\\BikeStore\\BikeStore.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nunor\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

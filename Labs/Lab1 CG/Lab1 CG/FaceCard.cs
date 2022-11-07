@@ -31,7 +31,8 @@ namespace Lab1_CG
         {
             get
             {
-                switch (faceName)
+                return faceName.ToNameString();
+                /*switch (faceName)
                 {
                     case FaceName.Valete:
                         return "Valete";
@@ -41,13 +42,13 @@ namespace Lab1_CG
                         return "Rei";
                     default:
                         return "";
-                }
+                }*/
             }
         }
 
         public override string ToString()
         {
-            return Name + " de " + base.Suit;
+            return Name + " de " + base.suit.ToNameString();
         }
     }
 }
