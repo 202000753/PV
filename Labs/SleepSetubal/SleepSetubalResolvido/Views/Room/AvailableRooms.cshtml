@@ -1,0 +1,63 @@
+﻿@model IEnumerable<SleepSetubal.Models.Room>
+
+@{
+    ViewData["Title"] = "Quartos Disponíveis";
+}
+
+<h1>Quartos Disponíveis</h1>
+
+@if(Model.Count() == 0)
+{
+    <p>Não existem quartos disponíveis</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Type)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Price)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Beds)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model) {
+            var param = new Dictionary<string, string>
+            {
+                { "name", item.Name }
+            };
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Type)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @foreach (var bed in item.Beds)
+                    {
+                        @bed
+                    }
+                </td>
+                <td>
+                    <h4><a asp-controller="Home" asp-action="MakeReservation" asp-all-route-data=param class="label label-success">Reservar</a></h4>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+
+}

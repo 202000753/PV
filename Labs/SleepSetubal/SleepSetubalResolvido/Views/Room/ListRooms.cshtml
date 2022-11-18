@@ -1,0 +1,62 @@
+﻿
+@model IEnumerable<SleepSetubal.Models.Room>
+
+@{
+    //Nivel 3
+    ViewData["Title"] = "Quartos";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@foreach (var item in Model)
+{
+    var param = new Dictionary<string, string>
+        {
+            { "name", item.Name }
+        };
+    <hr />
+    <table>
+        <tr>
+            <td>
+                <dl class="row">
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(modelItem => item.Name)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(modelItem => item.Beds)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @foreach (var bed in item.Beds)
+                        {
+                            @bed
+                        }
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(modelItem => item.Price)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(modelItem => item.Price)
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(modelItem => item.Available)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(modelItem => item.Available)
+                    </dd>
+                    <dt></dt>
+                    <dd>
+                        <!--Desafio-->
+                        @if(item.Available){
+                            <h4><a asp-controller="Home" asp-action="MakeReservation" asp-all-route-data=param class="label label-success">Reservar</a></h4>    
+                        }
+                        
+                    </dd>
+                </dl>
+            </td>
+        </tr>
+    </table>
+
+}

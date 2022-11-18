@@ -1,0 +1,46 @@
+﻿@model SleepSetubal.Models.Room
+
+@{
+    ViewData["Title"] = "Quarto Recomendado";
+    var param = new Dictionary<string, string>
+            {
+                { "name", Model.Name }
+            };
+}
+
+<h1>Quarto Recomendado</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+    </dl>
+</div>
+
+<!--Nivel 5--> 
+<!--<h4><a asp-controller="Home" asp-action="MakeReservation" class="label label-success">Reservar</a></h4>-->
+
+
+<!--Desafio-->
+<h4><a asp-controller="Home" asp-action="MakeReservation" asp-all-route-data=param class="label label-success">Reservar</a></h4>
+
+<div>
+    @ViewData["IndexRoom"]
+</div>
