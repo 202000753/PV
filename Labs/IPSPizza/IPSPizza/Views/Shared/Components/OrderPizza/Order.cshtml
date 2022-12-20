@@ -1,0 +1,36 @@
+﻿@model IPSPizza.Services.OrderService.Models.Pizza
+@{
+    ViewData["Title"] = "Order Pizza";
+}
+
+<h1>Order a pizza!</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-controller="OrderPizza" asp-action="Order">
+            <div class="form-group">
+                <label asp-for="IngredientIds" class="control-label"></label>
+                <select multiple asp-for="IngredientIds" class="form-control" asp-items="ViewBag.Ingredients"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Base" class="control-label"></label>
+                <select asp-for="Base" class="form-control" asp-items="ViewBag.Bases"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Size" class="control-label"></label>
+                <select asp-for="Size" class="form-control" asp-items="ViewBag.Sizes"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

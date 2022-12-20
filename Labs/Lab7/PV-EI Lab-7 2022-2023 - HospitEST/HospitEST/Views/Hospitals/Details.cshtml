@@ -1,0 +1,40 @@
+﻿@model HospitEST.Models.Hospital
+
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+<h1>@Model.Name</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Localization)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Localization)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Doctors)
+        </dt>
+        <dd class = "col-sm-10">
+            @if (Model.Doctors != null)
+            {
+                foreach(var doctors in Model.Doctors)
+                {
+                    <a>@String.Concat(doctors.Id, " - ", doctors.Name, " - ", doctors.Practice)</a><br />
+                }   
+            }
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Index">Voltar</a>
+</div>
