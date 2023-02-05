@@ -262,3 +262,8 @@ C:\Users\nunor\Desktop\PV\Labs\HospitEST\HospitEST\obj\Debug\net6.0\refint\Hospi
 C:\Users\nunor\Desktop\PV\Labs\HospitEST\HospitEST\obj\Debug\net6.0\HospitEST.pdb
 C:\Users\nunor\Desktop\PV\Labs\HospitEST\HospitEST\obj\Debug\net6.0\HospitEST.genruntimeconfig.cache
 C:\Users\nunor\Desktop\PV\Labs\HospitEST\HospitEST\obj\Debug\net6.0\ref\HospitEST.dll
+C:\Users\nunor\Desktop\PV\Labs\HospitEST\HospitEST\obj\Debug\net6.0\staticwebassets\msbuild.HospitEST.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\nunor\Desktop\PV\Labs\HospitEST\HospitEST\obj\Debug\net6.0\staticwebassets\msbuild.build.HospitEST.props
+C:\Users\nunor\Desktop\PV\Labs\HospitEST\HospitEST\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.HospitEST.props
+C:\Users\nunor\Desktop\PV\Labs\HospitEST\HospitEST\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.HospitEST.props
+C:\Users\nunor\Desktop\PV\Labs\HospitEST\HospitEST\obj\Debug\net6.0\staticwebassets.pack.json
