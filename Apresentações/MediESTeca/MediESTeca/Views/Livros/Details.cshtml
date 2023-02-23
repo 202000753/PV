@@ -1,0 +1,46 @@
+﻿@model MediESTeca.Models.Livro
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Livro</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Isbn)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Isbn)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Titulo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Titulo)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Autor)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Autor)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AnoEdicao)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AnoEdicao)
+        </dd>
+    </dl>
+</div>
+<div>
+    @if (User.IsInRole("admins"))
+    {
+        <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a>     
+    }
+    <a asp-action="Index">Back to List</a>
+</div>

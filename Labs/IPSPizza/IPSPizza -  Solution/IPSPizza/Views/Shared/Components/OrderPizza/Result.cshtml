@@ -1,0 +1,30 @@
+﻿@using IPSPizza.Services.IngredientService;
+@inject IIngredientService _ingredientService
+@model IPSPizza.Services.OrderService.Models.OrderResult
+@{
+    ViewData["Title"] = "Order Pizza";
+}
+
+<h1>Thank you for your order!</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <div>
+            <h2>Base: @Model.OrderedPizza.Base</h2>
+            <h2>Size: @Model.OrderedPizza.Size</h2>
+            <h2>Ingredients:</h2>
+
+            @{
+                var ingredientsList = await _ingredientService.GetIngredients();
+                foreach (var ingredientId in Model.OrderedPizza.IngredientIds)
+                {
+                    <h3>@ingredientsList.FirstOrDefault(i => i.IngredientId == ingredientId)?.Name</h3>
+                }
+            }
+            <br />
+            <h2>Price: @Model.Price €</h2>
+        </div>
+    </div>
+
+</div>

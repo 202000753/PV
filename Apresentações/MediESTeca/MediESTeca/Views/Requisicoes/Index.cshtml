@@ -1,0 +1,66 @@
+﻿@using MediESTeca.Areas.Identity.Data
+@using Microsoft.AspNetCore.Identity
+@model IEnumerable<MediESTeca.Models.Requisicao>
+
+@inject UserManager<Utente> UserManager
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    var user = await UserManager.GetUserAsync(User);
+    var userId = user?.Id;
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DataRequisicao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataEntrega)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Livro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Utente)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DataRequisicao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DataEntrega)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Livro.Autor)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Utente.Nome)
+                </td>
+                @if (item.Utente.Id == userId || User.IsInRole("admins"))
+                {
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id"> Edit </a> |
+                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>
+

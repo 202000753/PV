@@ -1,0 +1,28 @@
+<h1 id="tableLabel">Leagues</h1>
+
+<a href="/league/create">Create new League</a>
+
+<p *ngIf="!leagues"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="leagues">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Country</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let league of leagues">
+      <td>{{ league.leagueId }}</td>
+      <td>{{ league.name }}</td>
+      <td>{{ league.country}}</td>
+      <td>
+        <button (click)="deleteLeague(league.leagueId)">Delete</button>
+        <button [routerLink]="['/league', league.leagueId, 'details']">Details</button>
+        <button [routerLink]="['/league', league.leagueId, 'edit']">Edit</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
